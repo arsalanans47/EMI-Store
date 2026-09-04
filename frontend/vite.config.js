@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://emi-store-1hok.onrender.com/',
+      '/api': 'https://emi-store-1hok.onrender.com',
     },
   },
 })

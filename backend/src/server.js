@@ -14,6 +14,10 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({ status: "ok", message: "EMI Store API is running" });
+});
+
 app.use("/api/products", productRoutes);
 
 
